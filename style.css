@@ -1,0 +1,117 @@
+body{
+    background: linear-gradient(to left top,rgb(255, 255, 255),rgb(3, 70, 205));
+    cursor: pointer;
+    padding: 100px;
+    padding-left: 50px;
+}
+.main{
+    margin-top: 10px;
+    margin-left: 450px;
+    display: inline-block;
+    border: 7px solid gray;
+
+}
+.timer{
+    
+    margin-left: 550px;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    user-select: none;
+}
+.default-text{
+    overflow-y: auto;
+    /* user-select: none; */
+    border-radius: 15px;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    background: linear-gradient(to right,rgb(175, 69, 255),rgb(114, 0, 129));
+    margin-top: 20px; 
+    margin-left: 500px;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    /* background-color: rgb(0, 0, 0); */
+}
+#example-text{
+    overflow: hidden;
+    font-size: 20px;
+    margin:10px;
+    font-weight: 900;
+}
+#textplace::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+#textplace{
+    background: linear-gradient(to left top,rgb(255, 255, 255),rgb(3, 70, 205));
+    font-size: 25PX;
+    cursor: auto;
+}
+#textplace:focus{
+    color: rgb(16, 16, 16);
+}
+
+/* button design UIVERSE */
+.btn {
+    margin-top: -40px;
+    margin-left: 850px;
+    --color: #96fce1;
+    --color2: rgb(10, 25, 30);
+    background: linear-gradient(to right,rgb(0, 187, 255),rgb(19, 19, 19));
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
